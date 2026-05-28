@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" data-layout="centered">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>BeerLo™ — Privacy Policy</title>
+<meta name="description" content="BeerLo's privacy policy. What data we collect, where it goes, how to control it." />
+<link rel="icon" type="image/png" href="images/favicon.png" />
+<link rel="apple-touch-icon" href="images/app-icon-square.png" />
+<meta name="theme-color" content="#0D1117" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-mark"><img src="images/app-icon.png" alt="BeerLo logo" /></span>
+      <span>BeerLo<sup class="tm">&trade;</sup></span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html#features">Features</a>
+      <a href="index.html#screens">Screens</a>
+      <a href="index.html#faq">FAQ</a>
+      <a href="support.html">Support</a>
+    </nav>
+    <a href="https://apps.apple.com/app/beerlo" class="nav-cta" target="_blank" rel="noopener">Get the App</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="support-hero">
+  <div class="container">
+    <div class="eyebrow">Legal</div>
+    <h1>Privacy policy</h1>
+    <p>We collect only what we need to run BeerLo, and we don't sell it. This page describes exactly what that means.</p>
+  </div>
+</section>
+
+<!-- BODY -->
+<div class="container">
+
+  <section class="support-section">
+    <p class="policy-meta">Last updated: May 27, 2026</p>
+
+    <p>BeerLo<sup class="tm">&trade;</sup> exists to keep score for your friend group. We collect only what we need to run the app, and we don't sell it. This policy describes exactly what we collect, who we share it with, and how to control it.</p>
+
+    <h3>What we collect when you sign up</h3>
+    <ul>
+      <li><strong>Phone number.</strong> Used as your login. We text you a six-digit verification code via our auth provider (Supabase). US numbers only.</li>
+      <li><strong>Username.</strong> Your display name in the app (up to 20 characters), visible to other players in your groups.</li>
+      <li><strong>State.</strong> Inferred client-side from your phone number's area code. We do not request GPS or device location.</li>
+    </ul>
+
+    <h3>Optional information you can provide</h3>
+    <ul>
+      <li><strong>Profile photo.</strong> Uploaded from your camera or photo library and stored in our hosted storage. Visible to other players in your groups.</li>
+      <li><strong>Birth year.</strong> Self-reported, used only to determine whether you are 21 or older for alcohol-adjacent features.</li>
+      <li><strong>School affiliation.</strong> Chosen from a curated list during signup and shown on your profile.</li>
+    </ul>
+
+    <h3>Information we collect as you use the app</h3>
+    <ul>
+      <li><strong>Game and ELO data.</strong> Every game you log, the players involved, who won, and the resulting rating changes.</li>
+      <li><strong>Groups, tournaments, and group photos</strong> you create or join.</li>
+      <li><strong>Chat messages, feed comments, and reactions</strong> in the groups you belong to.</li>
+      <li><strong>Blocks and reports</strong> you submit against other users or content.</li>
+      <li><strong>Push notification token</strong> (only if you allow notifications) and your per-category notification preferences.</li>
+      <li><strong>Product analytics.</strong> Event names (e.g. <em>game_logged</em>, <em>group_created</em>) and your BeerLo user ID. We use PostHog for this.</li>
+      <li><strong>Crash and error data.</strong> When the app crashes, the stack trace and your user ID are sent to Sentry. We do <em>not</em> enable Sentry's default PII collection — no phone numbers, messages, or game content are included.</li>
+    </ul>
+
+    <h3>What we do not collect</h3>
+    <ul>
+      <li><strong>Precise location.</strong> No GPS, no background location, no location permission prompt.</li>
+      <li><strong>Email address.</strong> We don't ask for one.</li>
+      <li><strong>Contacts, calendar, health, or financial data.</strong></li>
+      <li><strong>Cross-app or cross-website tracking.</strong> Our iOS privacy manifest declares no tracking, and we use no advertising or attribution SDKs.</li>
+    </ul>
+
+    <h3>Service providers</h3>
+    <p>We use a short list of vendors to operate BeerLo. We share data with them only to run the service, and only the minimum each one needs:</p>
+    <ul>
+      <li><strong>Supabase</strong> — database, authentication, and photo storage. Receives the account, profile, game, group, message, and photo data you create in the app.</li>
+      <li><strong>Expo Push Notification Service</strong> — delivers push notifications to your device. Receives your device push token and platform.</li>
+      <li><strong>PostHog</strong> — product analytics. Receives event names and your BeerLo user ID.</li>
+      <li><strong>Sentry</strong> — crash and error monitoring. Receives error stack traces and your user ID. No message content, no phone number.</li>
+    </ul>
+    <p>We do not sell or rent your data to anyone, and we do not share data with advertisers.</p>
+
+    <h3>What other players see</h3>
+    <p>Players in your groups can see your username, profile photo, school (if you set one), state, ELO ratings, game history, and anything you post in chat or the feed. They cannot see your phone number or birth year.</p>
+
+    <h3>Children</h3>
+    <p>BeerLo is rated 17+ on the App Store and is intended for users 17 and older. We do not knowingly collect data from anyone under 13. If you believe a child has created an account, email <a href="mailto:beerlo346@gmail.com">beerlo346@gmail.com</a> and we will delete it.</p>
+
+    <h3>Retention and deletion</h3>
+    <p>We keep your data while your account is active. When you delete your account — in the app under <strong>Settings → Account Info → Delete Account</strong>, or by email request — we permanently anonymize your profile: your username becomes "Deleted user," your phone number and avatar are removed, and your push tokens, pending invites, and group memberships are deleted. Past games stay in group history so other players' records remain accurate, but they are no longer tied to a personal profile. Your phone number is then banned from re-registering.</p>
+
+    <h3>Security</h3>
+    <p>Data in transit is protected with TLS. Database access is enforced with row-level security policies at the backend. Crash reports are scrubbed of PII by default.</p>
+
+    <h3>Your rights and controls</h3>
+    <ul>
+      <li>Delete your account at any time from the in-app Settings.</li>
+      <li>Change or remove your username or profile photo.</li>
+      <li>Opt out of any notification category in <strong>Settings → Notifications</strong>.</li>
+      <li>Block any other user from their profile.</li>
+      <li>For any other data access, correction, or deletion request, email <a href="mailto:beerlo346@gmail.com">beerlo346@gmail.com</a>.</li>
+    </ul>
+
+    <h3>Changes to this policy</h3>
+    <p>If we materially change this policy, we will update the date at the top and, for significant changes, notify users in the app.</p>
+
+    <h3>Contact</h3>
+    <p>BeerLo<sup class="tm">&trade;</sup> · <a href="mailto:beerlo346@gmail.com">beerlo346@gmail.com</a></p>
+  </section>
+
+  <section class="support-section">
+    <a href="support.html" class="ghost-btn">← Back to support</a>
+  </section>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">
+          <span class="brand-mark"><img src="images/app-icon.png" alt="BeerLo" /></span>
+          <span>BeerLo<sup class="tm">&trade;</sup></span>
+        </a>
+        <p class="lead">Settle the debate. Track every game.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="index.html#features">Features</a></li>
+          <li><a href="index.html#screens">Screens</a></li>
+          <li><a href="index.html#faq">FAQ</a></li>
+          <li><a href="https://apps.apple.com/app/beerlo" target="_blank" rel="noopener">App Store</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="support.html">Help center</a></li>
+          <li><a href="mailto:beerlo346@gmail.com">beerlo346@gmail.com</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="terms.html">Terms</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year">2026</span> BeerLo<sup class="tm">&trade;</sup>. All rights reserved.</span>
+      <span>Made for the house · Drink responsibly</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  try {
+    const saved = JSON.parse(localStorage.getItem('beerlo_tweaks') || 'null');
+    if (saved && saved.theme) document.documentElement.setAttribute('data-theme', saved.theme);
+  } catch (_) {}
+</script>
+
+</body>
+</html>

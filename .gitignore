@@ -1,0 +1,25 @@
+# macOS
+.DS_Store
+.thumbnail
+._*
+.Spotlight-V100
+.Trashes
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Node (in case anyone ever runs npm here)
+node_modules/
+
+# Build output (none today, but future-proof)
+dist/
+.cache/
+
+# Site bundles
+beerlo-site.zip

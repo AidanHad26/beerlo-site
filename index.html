@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" data-layout="centered">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>BeerLo™ — Settle the debate. Track every game.</title>
+<meta name="description" content="BeerLo is the easiest way to log games, run tournaments, and crown your friend group's champion. ELO ratings, leaderboards, and rivalry — all in one app." />
+<link rel="icon" type="image/png" href="images/favicon.png" />
+<link rel="apple-touch-icon" href="images/app-icon-square.png" />
+<meta property="og:title" content="BeerLo™ — Settle the debate. Track every game." />
+<meta property="og:description" content="ELO ratings for your group's games. Pong, beer pong, anything you compete at." />
+<meta property="og:image" content="images/app-icon-square.png" />
+<meta name="theme-color" content="#0D1117" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ─────────────────────────────────────────────────────────────
+     NAV
+     ───────────────────────────────────────────────────────────── -->
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="/" class="brand">
+      <span class="brand-mark"><img src="images/app-icon.png" alt="BeerLo logo" /></span>
+      <span>BeerLo<sup class="tm">&trade;</sup></span>
+    </a>
+    <nav class="nav-links">
+      <a href="#features">Features</a>
+      <a href="#screens">Screens</a>
+      <a href="#faq">FAQ</a>
+      <a href="support.html">Support</a>
+    </nav>
+    <a href="https://apps.apple.com/app/beerlo" class="nav-cta" id="app-store-link-nav" target="_blank" rel="noopener">Get the App</a>
+  </div>
+</header>
+
+<!-- ─────────────────────────────────────────────────────────────
+     HERO
+     ───────────────────────────────────────────────────────────── -->
+<section class="hero">
+  <div class="container hero-inner">
+    <div class="hero-eyebrow eyebrow" data-screen-label="hero-eyebrow">Now on the App Store</div>
+    <h1 class="hero-title" data-comment-anchor="hero-title">
+      <span class="line-1">Settle the</span>
+      <span class="line-2">debate.</span>
+    </h1>
+    <p class="hero-lead lead" data-comment-anchor="hero-lead">
+      Have you and your friends ever debated who is the best at something? BeerLo<sup class="tm">&trade;</sup> solves the debate. Log your games, create tournaments, and track everyone's rankings — for any game you play.
+    </p>
+
+    <div class="hero-ctas">
+      <a href="https://apps.apple.com/app/beerlo" class="app-store-badge" id="app-store-link-hero" target="_blank" rel="noopener">
+        <svg class="apple-logo" viewBox="0 0 384 512" fill="currentColor" aria-hidden="true">
+          <path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/>
+        </svg>
+        <span class="badge-lines">
+          <span class="badge-top">Download on the</span>
+          <span class="badge-bot">App Store</span>
+        </span>
+      </a>
+      <a href="#features" class="ghost-btn">See how it works →</a>
+    </div>
+
+    <div class="hero-meta">
+      <div class="hero-meta-item">
+        <div class="num">1000</div>
+        <div class="lbl">Starting ELO</div>
+      </div>
+      <div class="hero-meta-item">
+        <div class="num">∞</div>
+        <div class="lbl">Games supported</div>
+      </div>
+      <div class="hero-meta-item">
+        <div class="num">$0</div>
+        <div class="lbl">Free to play</div>
+      </div>
+    </div>
+
+    <div class="hero-phone-wrap">
+      <!-- Replace the inner div with <img src="images/screenshots/leaderboard.png" alt="..."> when you have screenshots -->
+      <div class="phone-mockup" aria-label="Leaderboard screen placeholder">
+        <div class="notch"></div>
+        <div class="phone-screen"><div class="placeholder-label">Leaderboard</div></div>
+      </div>
+      <div class="phone-mockup" aria-label="Log game screen placeholder">
+        <div class="notch"></div>
+        <div class="phone-screen"><div class="placeholder-label">Log a game</div></div>
+      </div>
+      <div class="phone-mockup" aria-label="Tournament bracket placeholder">
+        <div class="notch"></div>
+        <div class="phone-screen"><div class="placeholder-label">Tournament</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────────────────────────────────────────────────
+     FEATURES
+     ───────────────────────────────────────────────────────────── -->
+<section class="section" id="features">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">What it does</div>
+      <h2>Four things.<br />Done right.</h2>
+      <p>BeerLo isn't a social network or a stats firehose. It's a focused way to keep score in the games that actually matter to your group.</p>
+    </div>
+
+    <div class="features">
+
+      <article class="feature">
+        <div class="feature-num">01 / Log</div>
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4Z"/>
+          </svg>
+        </div>
+        <h3>Log a game in seconds</h3>
+        <p>Pick the players, tap who won. Done. No spreadsheets, no group texts arguing about Greg's record.</p>
+        <div class="feature-stat">Avg. log time · 12s</div>
+      </article>
+
+      <article class="feature">
+        <div class="feature-num">02 / Rate</div>
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/>
+          </svg>
+        </div>
+        <h3>Real ELO ratings</h3>
+        <p>Same math chess uses. Beat someone better than you, climb fast. Lose to a rookie, the math is unforgiving.</p>
+        <div class="feature-stat">Updated every game</div>
+      </article>
+
+      <article class="feature">
+        <div class="feature-num">03 / Rank</div>
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/>
+            <path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/>
+            <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/>
+            <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/>
+          </svg>
+        </div>
+        <h3>Leaderboards that bite</h3>
+        <p>Rankings update live. See who's #1 in your house, your group, your league. The standings don't lie.</p>
+        <div class="feature-stat">Per group · per game mode</div>
+      </article>
+
+      <article class="feature">
+        <div class="feature-num">04 / Crown</div>
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M2 4l3 12h14l3-12-6 7-4-7-4 7-6-7Z"/><path d="M5 20h14"/>
+          </svg>
+        </div>
+        <h3>Run real tournaments</h3>
+        <p>Generate brackets, seed by rating, advance winners with a tap. House cup, summer league, whatever you call it.</p>
+        <div class="feature-stat">Single & double elim</div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────────────────────────────────────────────────
+     SCREENSHOTS
+     ───────────────────────────────────────────────────────────── -->
+<section class="section" id="screens" style="padding-top: 0;">
+  <div class="container">
+    <div class="section-head" style="text-align: center; margin-left: auto; margin-right: auto;">
+      <div class="eyebrow" style="justify-content: center; display: inline-flex;">Inside the app</div>
+      <h2>Built for the<br />Friday-night argument.</h2>
+    </div>
+
+    <div class="screens-strip">
+      <!-- Drop <img src="..."> tags inside .phone-mockup, or replace the whole .phone-screen contents -->
+      <div class="phone-mockup" aria-label="Stats screen placeholder">
+        <div class="notch"></div>
+        <div class="phone-screen"><div class="placeholder-label">Player stats</div></div>
+      </div>
+      <div class="phone-mockup" aria-label="Game feed screen placeholder">
+        <div class="notch"></div>
+        <div class="phone-screen"><div class="placeholder-label">Game feed</div></div>
+      </div>
+      <div class="phone-mockup" aria-label="Group screen placeholder">
+        <div class="notch"></div>
+        <div class="phone-screen"><div class="placeholder-label">Your group</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────────────────────────────────────────────────
+     FAQ
+     ───────────────────────────────────────────────────────────── -->
+<section class="section" id="faq">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">FAQ</div>
+      <h2>The usual<br />questions.</h2>
+    </div>
+
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>Is BeerLo free?</summary>
+        <div class="faq-answer">Yes. Free to download, free to log games, free to run tournaments. No ads, no subscription wall on the core experience.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Is it just for beer pong?</summary>
+        <div class="faq-answer">Nope. The name is a wink — BeerLo works for any game where you want to track rankings: pong, spike ball, paddr, darts, cornhole, chess, FIFA, whatever. If it has a winner, you can log it.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>How do groups work?</summary>
+        <div class="faq-answer">Make a group for your house, friends, fraternity, league — anything. Invite people, log games among the group, climb the group's leaderboard. You can be in multiple groups at once.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>What's ELO?</summary>
+        <div class="faq-answer">The rating system from chess. Everyone starts at 1000. Win and your rating goes up — more if you beat a stronger player, less if you crush a beginner. It self-corrects over time so the leaderboard reflects skill, not just volume.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Do I need an Android version?</summary>
+        <div class="faq-answer">BeerLo is iOS-first for now. An Android version is on the roadmap once we've polished the core experience on iPhone.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Need help, want a feature, found a bug?</summary>
+        <div class="faq-answer">Head to the <a href="support.html">support page</a> — email response usually within 48 hours.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────────────────────────────────────────────────
+     CTA BAND
+     ───────────────────────────────────────────────────────────── -->
+<section class="container">
+  <div class="cta-band">
+    <div class="eyebrow" style="justify-content: center; display: inline-flex; margin-bottom: 16px;">Get BeerLo</div>
+    <h2>Pour up.<br />Start logging.</h2>
+    <p>Free on the App Store. Takes 30 seconds to set up your group.</p>
+    <a href="https://apps.apple.com/app/beerlo" class="app-store-badge" target="_blank" rel="noopener">
+      <svg class="apple-logo" viewBox="0 0 384 512" fill="currentColor" aria-hidden="true">
+        <path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/>
+      </svg>
+      <span class="badge-lines">
+        <span class="badge-top">Download on the</span>
+        <span class="badge-bot">App Store</span>
+      </span>
+    </a>
+  </div>
+</section>
+
+<!-- ─────────────────────────────────────────────────────────────
+     FOOTER
+     ───────────────────────────────────────────────────────────── -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="/" class="brand">
+          <span class="brand-mark"><img src="images/app-icon.png" alt="BeerLo" /></span>
+          <span>BeerLo<sup class="tm">&trade;</sup></span>
+        </a>
+        <p class="lead">Settle the debate. Track every game. ELO ratings for the games that matter to your friend group.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#screens">Screens</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="https://apps.apple.com/app/beerlo" target="_blank" rel="noopener">App Store</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="support.html">Help center</a></li>
+          <li><a href="mailto:beerlo346@gmail.com">beerlo346@gmail.com</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="terms.html">Terms</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year">2026</span> BeerLo<sup class="tm">&trade;</sup>. All rights reserved.</span>
+      <span>Made for the house · Drink responsibly</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ─────────────────────────────────────────────────────────────
+     Year + Tweaks (Tweaks layer only activates inside our preview)
+     ───────────────────────────────────────────────────────────── -->
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Apply persisted theme/layout/copy from localStorage so refresh keeps state
+  (function () {
+    try {
+      const saved = JSON.parse(localStorage.getItem('beerlo_tweaks') || 'null');
+      if (saved) applyTweaks(saved);
+    } catch (_) {}
+  })();
+
+  function applyTweaks(t) {
+    if (t.theme)  document.documentElement.setAttribute('data-theme', t.theme);
+    if (t.layout) document.documentElement.setAttribute('data-layout', t.layout);
+    if (t.heroCopy) applyHeroCopy(t.heroCopy);
+    document.querySelector('meta[name="theme-color"]')
+      ?.setAttribute('content', getComputedStyle(document.body).backgroundColor);
+  }
+  function applyHeroCopy(variant) {
+    const title = document.querySelector('.hero-title');
+    const lead  = document.querySelector('.hero-lead');
+    const copies = {
+      'settle-debate': {
+        l1: 'Settle the', l2: 'debate.',
+        lead: "Have you and your friends ever debated who is the best at something? BeerLo solves the debate. Log your games, create tournaments, and track everyone's rankings — for any game you play."
+      },
+      'house-elo': {
+        l1: 'ELO for your', l2: 'house games.',
+        lead: 'Pong, beer pong, spike ball, paddr — log every match and BeerLo crunches the ratings. Suddenly your friend group has a leaderboard, and it actually means something.'
+      },
+      'log-rank-crown': {
+        l1: 'Log. Rank.', l2: 'Crown.',
+        lead: 'Three taps to log a game. A live leaderboard for your group. Real ELO ratings. Bracket tournaments when you want to make it official. That\u2019s it. That\u2019s the app.'
+      }
+    };
+    const c = copies[variant];
+    if (!c || !title || !lead) return;
+    title.querySelector('.line-1').textContent = c.l1;
+    title.querySelector('.line-2').textContent = c.l2;
+    lead.textContent = c.lead;
+  }
+</script>
+
+<!-- Tweaks layer: only loads React + the panel when running inside our preview frame -->
+<script>
+  if (window.parent !== window) {
+    const load = (src, attrs={}) => new Promise(res => {
+      const s = document.createElement('script');
+      s.src = src; Object.assign(s, attrs);
+      s.onload = res; document.head.appendChild(s);
+    });
+    (async () => {
+      await load('https://unpkg.com/react@18.3.1/umd/react.development.js', { crossOrigin: 'anonymous', integrity: 'sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L' });
+      await load('https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js', { crossOrigin: 'anonymous', integrity: 'sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm' });
+      await load('https://unpkg.com/@babel/standalone@7.29.0/babel.min.js', { crossOrigin: 'anonymous', integrity: 'sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y' });
+      const s = document.createElement('script');
+      s.type = 'text/babel'; s.src = 'tweaks-panel.jsx';
+      document.head.appendChild(s);
+      s.onload = () => {
+        const a = document.createElement('script');
+        a.type = 'text/babel'; a.src = 'tweaks-app.jsx';
+        document.head.appendChild(a);
+      };
+    })();
+  }
+</script>
+
+</body>
+</html>
