@@ -23,3 +23,9 @@ dist/
 
 # Site bundles
 beerlo-site.zip
+
+# Stray sandbox temp file (created during a permissions check; cannot be removed from sandbox)
+_perm.tmp
+
+# Original screenshot uploads (clean-named copies are committed instead)
+images/screenshots/Screenshot*
