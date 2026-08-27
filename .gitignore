@@ -29,3 +29,6 @@ _perm.tmp
 
 # Original screenshot uploads (clean-named copies are committed instead)
 images/screenshots/Screenshot*
+
+# Wrangler local state (contains Cloudflare account id)
+.wrangler/

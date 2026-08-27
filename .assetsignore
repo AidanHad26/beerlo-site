@@ -1,16 +1,33 @@
-# Files in this folder that should NOT be uploaded to Cloudflare / served publicly.
+# Files in this folder that must NOT be uploaded to Cloudflare / served publicly.
+# Uses .gitignore syntax. Anything not listed here IS published to beerlo.net.
+
+# Version control
 .git
+.git/**
 .gitignore
+
+# Wrangler local state — contains your Cloudflare account ID. Never publish.
+.wrangler
+.wrangler/**
+
+# Deploy config / docs
 .assetsignore
 wrangler.jsonc
+wrangler.toml
 README.md
 
-# Preview-only design tools — never load on the live site
+# Preview-only design tools — only load inside the Claude preview iframe
 tweaks-app.jsx
 tweaks-panel.jsx
 
-# Local junk
+# macOS + local junk
 .DS_Store
 **/.DS_Store
-*.zip
+.thumbnail
+**/.thumbnail
+._*
+**/._*
 _perm.tmp
+
+# Archives
+*.zip
