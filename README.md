@@ -93,9 +93,33 @@ Right now the site shows six "placeholder" phone mockups. To replace them with r
 ---
 
 ## Updating the site later
-Edit any file on your computer, commit + push to GitHub, and Cloudflare redeploys automatically within ~60 seconds. No SSH, no FTP, no servers.
 
-If you'd rather edit directly in the browser: open the file in GitHub, click the pencil icon, edit, and commit. Same auto-deploy.
+**Pushing to GitHub does NOT deploy the site.** This project is a Cloudflare
+*Worker* serving static assets, and it is deployed manually with the Wrangler
+CLI. GitHub is version control only.
+
+To publish changes:
+
+```bash
+cd ~/Downloads/"BeerLo website"
+
+git add -A
+git commit -m "describe the change"
+git push origin main     # version control
+
+npx wrangler deploy      # <- this is what actually makes it live
+```
+
+The first `wrangler` run opens a browser to log in to Cloudflare. After that
+it remembers you.
+
+Deploy settings live in `wrangler.jsonc`; `.assetsignore` lists files that
+should stay out of the public site (README, the tweaks-*.jsx preview tools, etc).
+
+### Want push-to-deploy instead?
+In the Cloudflare dashboard: **Workers & Pages → beerlo-site → Settings → Build**,
+connect the GitHub repo and set the branch to `main`. Once connected, pushes
+build automatically and `npx wrangler deploy` is no longer needed.
 
 ---
 

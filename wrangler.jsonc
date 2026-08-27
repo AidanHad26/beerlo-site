@@ -1,0 +1,12 @@
+{
+  // Static-asset Worker for beerlo.net.
+  // The site is plain HTML/CSS/images with no build step, so there is no
+  // "main" script — Cloudflare just serves the files in this directory.
+  //
+  // Deploy with:  npx wrangler deploy
+  "name": "beerlo-site",
+  "compatibility_date": "2026-08-27",
+  "assets": {
+    "directory": "."
+  }
+}

@@ -1,0 +1,16 @@
+# Files in this folder that should NOT be uploaded to Cloudflare / served publicly.
+.git
+.gitignore
+.assetsignore
+wrangler.jsonc
+README.md
+
+# Preview-only design tools — never load on the live site
+tweaks-app.jsx
+tweaks-panel.jsx
+
+# Local junk
+.DS_Store
+**/.DS_Store
+*.zip
+_perm.tmp
